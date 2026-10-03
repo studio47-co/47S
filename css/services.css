@@ -1,0 +1,28 @@
+.service-list {
+    border-top:1px solid var(--line);
+    margin-top:60px;
+}
+.service {
+    display:grid;
+    grid-template-columns:70px 1.2fr 1.5fr 100px;
+    gap:20px;
+    padding:25px 0;
+    border-bottom:1px solid var(--line);
+    align-items:center;
+    transition:padding .25s;
+}
+.service:hover {
+    padding-left:12px;
+    padding-right:12px;
+}
+.service h3 {
+    font-size:clamp(1.5rem,3vw,3rem);
+    letter-spacing:-.05em;
+}
+.service p {
+    max-width:430px;
+    color:#555;
+}
+.service .link {
+    justify-self:end;
+}
