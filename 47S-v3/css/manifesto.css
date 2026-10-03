@@ -1,0 +1,22 @@
+.manifesto-grid {
+    display:grid;
+    grid-template-columns:1fr 2fr;
+    gap:40px;
+}
+.manifesto-words {
+    display:block;
+    font-family:'Anton',sans-serif;
+    font-size:100px;
+    font-weight:400;
+    letter-spacing:1px;
+    line-height:120px;
+    margin-top:20px;
+}
+.manifesto-copy {
+    max-width:480px;
+    margin-left:auto;
+    padding-top:20px;
+}
+.manifesto-copy p {
+    margin-bottom:25px;
+}

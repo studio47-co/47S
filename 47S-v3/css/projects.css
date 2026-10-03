@@ -1,0 +1,50 @@
+.project-list {
+    margin-top:60px;
+}
+.project-item {
+    display:grid;
+    grid-template-columns:70px 1.2fr 1fr 120px;
+    gap:20px;
+    padding:22px 0;
+    border-top:1px solid var(--line);
+    align-items:center;
+}
+.project-item:last-child {
+    border-bottom:1px solid var(--line);
+}
+.project-name {
+    font-size:clamp(1.6rem,3.2vw,3.4rem);
+    font-weight:800;
+    letter-spacing:-.06em;
+}
+.project-visual {
+    aspect-ratio:16/10;
+    background:var(--black);
+    overflow:hidden;
+    position:relative;
+}
+.project-visual::before {
+    content:'47S';
+    position:absolute;
+    inset:10%;
+    display:grid;
+    place-items:center;
+    color:var(--off);
+    font-size:clamp(4rem,10vw,10rem);
+    font-weight:900;
+    letter-spacing:-.1em;
+}
+.project-visual::after {
+    content:'CONCEPT / DIGITAL';
+    position:absolute;
+    left:14px;
+    bottom:14px;
+    color:var(--off);
+    font:10px var(--mono);
+}
+.visual-light {
+    background:#ddd;
+}
+.visual-light::before {
+    color:var(--black);
+}
