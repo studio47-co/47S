@@ -1,0 +1,143 @@
+/* ── Navbar ──────────────────────────────────────── */
+.nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: color-mix(in srgb, var(--off) 94%, transparent);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--line);
+}
+.nav-inner {
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+.logo {
+    font-size: 22px;
+    font-weight: 900;
+    letter-spacing: -.08em;
+    flex-shrink: 0;
+    z-index: 2;
+}
+.nav-links {
+    display: flex;
+    gap: 28px;
+    align-items: center;
+}
+.nav-links a {
+    font: 500 11px var(--mono);
+    letter-spacing: .06em;
+    white-space: nowrap;
+}
+.nav-links a[aria-current=page],
+.nav-links a:hover {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+/* ── Hamburger (oculto no desktop) ──────────────── */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    width: 36px;
+    height: 36px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 6px;
+    z-index: 2;
+    -webkit-tap-highlight-color: transparent;
+}
+.menu-toggle span {
+    display: block;
+    width: 22px;
+    height: 1.5px;
+    background: var(--black);
+    transition: transform .28s ease, opacity .2s ease;
+    transform-origin: center;
+}
+.menu-toggle[aria-expanded="true"] span:nth-child(1) {
+    transform: translateY(6.5px) rotate(45deg);
+}
+.menu-toggle[aria-expanded="true"] span:nth-child(2) {
+    opacity: 0;
+}
+.menu-toggle[aria-expanded="true"] span:nth-child(3) {
+    transform: translateY(-6.5px) rotate(-45deg);
+}
+
+/* ── Drawer (dropdown que desce da navbar) ──────── */
+.nav-drawer {
+    display: none;
+    position: absolute;
+    top: 52px;          /* mesma altura que .nav-inner */
+    left: 0;
+    right: 0;
+    background: var(--off);
+    border-bottom: 1px solid var(--line);
+    box-shadow: 0 12px 40px rgba(10,10,10,.1);
+    transform-origin: top center;
+    animation: drawerIn .22s ease forwards;
+}
+.nav-drawer.open {
+    display: block;
+}
+@keyframes drawerIn {
+    from { opacity: 0; transform: translateY(-6px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+.drawer-inner {
+    padding: 6px 0 18px;
+}
+.drawer-inner a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 13px var(--pad);
+    font: 500 11px var(--mono);
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: var(--black);
+    border-bottom: 1px solid var(--line);
+    transition: background .15s;
+}
+.drawer-inner a:last-of-type {
+    border-bottom: none;
+}
+.drawer-inner a:hover {
+    background: rgba(10,10,10,.04);
+}
+.drawer-inner a[aria-current=page] {
+    font-weight: 700;
+}
+.drawer-inner a::after {
+    content: '↗';
+    font-size: 10px;
+    color: var(--gray);
+}
+.drawer-inner a[aria-current=page]::after {
+    content: '●';
+    font-size: 7px;
+    color: var(--black);
+}
+.drawer-sep {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px var(--pad) 4px;
+    margin-top: 4px;
+    border-top: 1px solid var(--line);
+}
+.drawer-sep span,
+.drawer-sep a {
+    font: 10px var(--mono);
+    text-transform: uppercase;
+    letter-spacing: .06em;
+    color: var(--gray);
+}
+.drawer-sep a { color: var(--black); }
