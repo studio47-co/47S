@@ -102,18 +102,22 @@
   .grid > * { grid-column: 1 / -1 !important; min-width: 0; }
 
   /* ── Manifesto ──────────────────────────────── */
+
   .manifesto-grid {
-    grid-template-columns: 1fr;
-    gap: 28px;
+        grid-template-columns: 1fr;
+        gap: 28px;
   }
+
+  .manifesto-copy {
+        margin-left: 0;
+        padding-top: 0;
+  }
+
   .manifesto-words {
-    line-height: 1.1;
-    letter-spacing: 1px;
-    font-size: 2.8rem !important;
-    line-height: 1.2;
-    letter-spacing: 1px;
+        font-size: 2.8rem !important;
+        line-height: 1.2;
+        white-space: normal;
   }
-  .manifesto-copy { margin-left: 0; padding-top: 0; max-width: 100%; }
 
   /* ── Lista de serviços (home) ───────────────── */
   .service-list { margin-top: 40px; }

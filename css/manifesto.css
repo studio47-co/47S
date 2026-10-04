@@ -1,27 +1,33 @@
 .manifesto-grid {
     display: grid;
-    grid-template-columns: max-content 2fr;
-    gap: 4px;
+    grid-template-columns: minmax(0, 1fr) minmax(280px, 480px);
+    gap: 60px;
+    align-items: start;
 }
+
+.manifesto-head {
+    min-width: 0;
+}
+
 .manifesto-words {
-    display:flex;
-    justify-content:left;
-    font-family:'Anton',sans-serif;
-    font-size:100px;
+    display: flex;
+    justify-content: flex-start;
+    font-family: 'Anton', sans-serif;
+    font-size: 90px;
     font-weight: 400;
-    letter-spacing:1px;
-    line-height:120px;
-    margin-top:20px;
-    padding-left: 70px;
-    padding-top: 0px;
+    letter-spacing: 1px;
+    line-height: 110px;
+    margin-top: 20px;
     margin-bottom: 10px;
     white-space: nowrap;
 }
+
 .manifesto-copy {
-    max-width:480px;
-    margin-left:auto;
-    padding-top:20px;
+    max-width: 480px;
+    margin-left: auto;
+    padding-top: 20px;
 }
+
 .manifesto-copy p {
-    margin-bottom:25px;
+    margin-bottom: 25px;
 }
