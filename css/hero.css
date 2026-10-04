@@ -14,11 +14,8 @@
 }
 .hero-title span {
     display:block;
-    font-family:'Anton',sans-serif;
-    font-size:150px;
-    font-weight:400;
-    letter-spacing:5px;
-    line-height:140px;
+    font-size:7.5rem;
+    line-height:.93;
 }
 .hero-title span:nth-child(2) {
     margin-left:15vw;

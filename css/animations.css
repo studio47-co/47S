@@ -1,9 +1,10 @@
-.reveal {
+/* .js é adicionado no <head>; sem JS o conteúdo fica visível */
+.js .reveal {
     opacity:0;
     transform:translateY(24px);
     transition:opacity .7s ease,transform .7s ease;
 }
-.reveal.visible {
+.js .reveal.visible {
     opacity:1;
     transform:none;
 }
@@ -14,7 +15,7 @@
     html {
         scroll-behavior:auto;
     }
-    .reveal {
+    .js .reveal {
         opacity:1;
         transform:none;
         transition:none;

@@ -4,7 +4,7 @@
 }
 
 .section {
-    padding: 35px 0 !important;
+    padding: 35px 0;
     border-top: 1px solid var(--line);
 }
 
@@ -47,7 +47,7 @@
 }
 
 .page-intro {
-    padding: 170px 0 80px;
+    padding: 85px 0 70px;
 }
 
 .page-intro .display {
@@ -73,3 +73,26 @@
     outline: 2px solid var(--black);
     outline-offset: 4px;
 }
+
+/* ── Utilitários de espaçamento (substituem style="" inline) ── */
+.mt-15 { margin-top: 15px; }
+.mt-20 { margin-top: 20px; }
+.mt-25 { margin-top: 25px; }
+.mt-30 { margin-top: 30px; }
+.mt-40 { margin-top: 40px; }
+.mt-45 { margin-top: 45px; }
+.mt-60 { margin-top: 60px; }
+.mb-45 { margin-bottom: 45px; }
+.pt-50 { padding-top: 50px; }
+
+/* ── Utilitários de grid (colunas do .grid de 12) ── */
+.col-span-4 { grid-column: span 4; }
+.col-span-5 { grid-column: span 5; }
+.col-side   { grid-column: 7 / -1; }
+
+/* ── Textos de abertura das páginas ── */
+.page-lead  { max-width: 650px; margin-top: 35px; }
+.page-lead--620 { max-width: 620px; }
+.page-lead--680 { max-width: 680px; }
+.page-lead--700 { max-width: 700px; }
+.text-block { max-width: 580px; margin-top: 18px; }

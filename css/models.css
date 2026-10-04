@@ -19,16 +19,21 @@
     justify-content:space-between;
 }
 .model-preview strong {
-    font-size:clamp(3rem,7vw,7rem);
-    letter-spacing:-.08em;
+    font-size:6rem;
+    line-height:1;
 }
 .model h3 {
-    font-size:2.5rem;
-    letter-spacing:-.06em;
+    font-size:2.8rem;
+    line-height:1.05;
 }
 .model p {
     max-width:520px;
     margin:8px 0 18px;
+}
+/* prévia do modelo (substitui o style inline margin:0; min-height:420px) */
+.case-visual--model {
+    margin:0;
+    min-height:420px;
 }
 .model-detail {
     display:grid;

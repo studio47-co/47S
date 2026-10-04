@@ -10,16 +10,10 @@
 }
 
 .manifesto-words {
-    display: flex;
-    justify-content: flex-start;
-    font-family: 'Anton', sans-serif;
-    font-size: 90px;
-    font-weight: 400;
-    letter-spacing: 1px;
-    line-height: 110px;
+    font-size:4rem;
+    line-height: 68px !important;
     margin-top: 20px;
     margin-bottom: 10px;
-    white-space: nowrap;
 }
 
 .manifesto-copy {

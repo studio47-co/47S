@@ -1,13 +1,11 @@
 .contact-grid {
     display:grid;
-    grid-template-columns:1fr 1.4fr;
+    grid-template-columns:minmax(0,1fr) minmax(0,1.4fr);   /* título nunca empurra o formulário */
     gap:80px;
 }
 .contact-title {
-    font-size:clamp(5rem,12vw,12rem);
-    line-height:.78;
-    letter-spacing:-.09em;
-    font-weight:900;
+    font-size:6.8rem;
+    line-height:.95;
 }
 .contact-form {
     display:grid;

@@ -1,5 +1,5 @@
 .case-hero {
-    padding:120px 0 50px;
+    padding:90px 0 50px;
 }
 .case-head {
     display:grid;
@@ -7,10 +7,8 @@
     gap:40px;
 }
 .case-title {
-    font-size:clamp(4rem,10vw,10rem);
-    line-height:.8;
-    letter-spacing:-.08em;
-    font-weight:900;
+    font-size:8rem;
+    line-height:.95;
 }
 .case-meta {
     display:grid;
@@ -38,8 +36,8 @@
     box-shadow:30px 30px 0 rgba(0,0,0,.2);
 }
 .case-visual .mock strong {
-    font-size:clamp(3rem,8vw,8rem);
-    letter-spacing:-.08em;
+    font-size:7rem;
+    line-height:1;
 }
 .case-sections {
     padding:100px 0;
@@ -52,13 +50,18 @@
     border-top:1px solid var(--line);
 }
 .case-block h2 {
-    font-size:clamp(2rem,4vw,4rem);
-    letter-spacing:-.06em;
+    font-size:3.3rem;
+    line-height:1.05;
 }
 .case-block p {
     max-width:650px;
     font-size:18px;
     line-height:1.5;
+}
+.case-nav {
+    display:flex;
+    justify-content:space-between;
+    gap:20px;
 }
 .gallery {
     display:grid;

@@ -1,11 +1,19 @@
+/* ── Variáveis globais ───────────────────────────── */
 :root {
-    --off:#f4f1ea;
-    --black:#222222;
-    --gray:#8a8a8a;
-    --white:#fff;
-    --line:rgba(10,10,10,.16);
-    --pad:clamp(20px,4vw,64px);
-    --max:1440px;
-    --sans:Inter,Arial,Helvetica,sans-serif;
-    --mono:'IBM Plex Mono',monospace;
+    /* Cores */
+    --off: #f4f1ea;
+    --black: #222222;
+    --gray: #6b6b6b;           /* contraste 4,7:1 sobre --off (antes #8a8a8a = 3,1:1) */
+    --white: #fff;
+    --line: rgba(10, 10, 10, .16);
+
+    /* Layout */
+    --pad: 40px;
+    --max: 1440px;
+
+    /* Fontes */
+    --sans: Inter, Arial, Helvetica, sans-serif;
+    --mono: 'IBM Plex Mono', monospace;
+    --display: 'Anton', Impact, 'Arial Narrow', sans-serif;               /* títulos grandes */
+    --brand: 'MuseoModerno', 'Inter', Arial, Helvetica, sans-serif;       /* "47S" grande */
 }
