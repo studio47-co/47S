@@ -14,6 +14,6 @@
     border-top:1px solid var(--line);
 }
 .principle h3 {
-    font-size:3.3rem;
-    line-height:1.05;
+    font-size:clamp(2rem,4vw,4rem);
+    letter-spacing:-.06em;
 }

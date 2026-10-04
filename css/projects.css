@@ -13,8 +13,9 @@
     border-bottom:1px solid var(--line);
 }
 .project-name {
-    font-size:3rem;
-    line-height:1.05;
+    font-size:clamp(1.6rem,3.2vw,3.4rem);
+    font-weight:800;
+    letter-spacing:-.06em;
 }
 .project-visual {
     aspect-ratio:16/10;
@@ -29,7 +30,9 @@
     display:grid;
     place-items:center;
     color:var(--off);
-    font-size:8rem;
+    font-size:clamp(4rem,10vw,10rem);
+    font-weight:900;
+    letter-spacing:-.1em;
 }
 .project-visual::after {
     content:'CONCEPT / DIGITAL';

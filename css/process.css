@@ -9,8 +9,8 @@
     border-top:1px solid var(--line);
 }
 .step h2 {
-    font-size:4.5rem;
-    line-height:1;
+    font-size:clamp(2.5rem,6vw,6rem);
+    letter-spacing:-.07em;
 }
 .step p {
     max-width:560px;

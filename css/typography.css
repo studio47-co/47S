@@ -1,76 +1,33 @@
-/* ═══════════════════════════════════════════════════
-   Tipografia
-   As fontes são carregadas por <link> no <head> de cada página
-   (Anton, Inter, IBM Plex Mono e MuseoModerno via Google Fonts).
-
-   Regra: toda família/peso/espaçamento dos títulos grandes
-   fica AQUI. Os CSS dos componentes só definem tamanho,
-   altura de linha e posição.
-   ═══════════════════════════════════════════════════ */
-
-/* ── Títulos grandes → Anton ─────────────────────── */
-.display,
-.hero-title span,
-.manifesto-words,
-.section-title,
-.case-title,
-.case-block h2,
-.contact-title,
-.service h3,
-.service-detail h2,
-.project-name,
-.step h2,
-.principle h3,
-.model h3,
-.model-preview strong,
-.case-visual .mock strong,
-.catalog-info h3 {
-    font-family: var(--display);
-    font-weight: 400;          /* Anton só existe em 400: evita negrito falso */
-    letter-spacing: .01em;
-}
-
-/* ── "47S" grande → MuseoModerno ─────────────────── */
-.footer-brand,
-.catalog-preview::before,
-.project-visual::before {
-    font-family: var(--brand);
-    font-weight: 700;
-    letter-spacing: -.04em;
-}
-
-/* ── Tamanhos ────────────────────────────────────── */
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800;900&family=IBM+Plex+Mono:wght@400;500&display=swap');
 .display {
-    font-size: 8rem;
-    line-height: 1;
+    font-size:clamp(4rem,12vw,12rem);
+    line-height:.82;
+    letter-spacing:-.075em;
+    font-weight:900;
 }
-
-.section-title {
-    display: block;
-    font-size: 3.2rem;
-    line-height: 1.08;
-}
-
-.lead {
-    font-size: 1.5rem;
-    line-height: 1.15;
-    letter-spacing: -.03em;
-}
-
-.body {
-    font-size: 16px;
-    line-height: 1.55;
-}
-
-/* ── Microtexto (mono) ───────────────────────────── */
-.eyebrow,
-.meta,
-.micro {
-    font-family: var(--mono);
-    font-size: 11px;
-    letter-spacing: .08em;
-    text-transform: uppercase;
+.eyebrow,.meta,.micro {
+    font-family:var(--mono);
+    font-size:11px;
+    letter-spacing:.08em;
+    text-transform:uppercase;
     width: fit-content;
     height: fit-content;
     display: block;
+}
+.lead {
+    font-size:clamp(1.25rem,2.2vw,2rem);
+    line-height:1.15;
+    letter-spacing:-.03em;
+}
+.body {
+    font-size:16px;
+    line-height:1.55;
+}
+.section-title {
+    display:block;
+    font-family:'Anton',sans-serif;
+    font-size:65px;
+    font-weight:400;
+    letter-spacing:1px;
+    line-height:70px;
 }

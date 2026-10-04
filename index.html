@@ -11,10 +11,6 @@
    Sites, design e tecnologia — 47S
   </title>
   <link rel="icon" type="image/png" href="img/logo.png">
-  <script>document.documentElement.classList.add('js');</script>
-  <link href="https://fonts.googleapis.com" rel="preconnect"/>
-  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-  <link href="https://fonts.googleapis.com/css2?family=Anton&amp;family=IBM+Plex+Mono:wght@400;500&amp;family=Inter:wght@400;500;600;700;900&amp;family=MuseoModerno:wght@700&amp;display=swap" rel="stylesheet"/>
   <link href="css/variables.css" rel="stylesheet"/>
   <link href="css/reset.css" rel="stylesheet"/>
   <link href="css/typography.css" rel="stylesheet"/>
@@ -34,6 +30,9 @@
   <link href="css/footer.css" rel="stylesheet"/>
   <link href="css/animations.css" rel="stylesheet"/>
   <link href="css/responsive.css" rel="stylesheet"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
  </head>
  <body>
   <a class="skip" href="#main">
@@ -45,7 +44,7 @@
      47S
     </a>
     <button class="menu-toggle" aria-expanded="false" aria-label="Abrir menu">
-     <span></span><span></span><span></span>
+      <span></span><span></span><span></span>
     </button>
     <nav aria-label="Navegação principal" class="nav-links">
      <a href="index.html">
@@ -53,9 +52,6 @@
      </a>
      <a href="pages/projetos.html">
       PROJETOS
-     </a>
-     <a href="pages/modelos.html">
-      MODELOS
      </a>
      <a href="pages/servicos.html">
       SERVIÇOS
@@ -71,21 +67,20 @@
      </a>
     </nav>
    </div>
-   <div class="nav-drawer" role="navigation" aria-label="Menu mobile">
-    <div class="drawer-inner">
-     <a href="index.html">Início</a>
-     <a href="pages/projetos.html">Projetos</a>
-     <a href="pages/modelos.html">Modelos</a>
-     <a href="pages/servicos.html">Serviços</a>
-     <a href="pages/processo.html">Processo</a>
-     <a href="pages/sobre.html">Sobre</a>
-     <a href="pages/contato.html">Contato</a>
+    <div class="nav-drawer" role="navigation" aria-label="Menu mobile">
+      <div class="drawer-inner">
+        <a href="index.html">Início</a>
+        <a href="pages/projetos.html">Projetos</a>
+        <a href="pages/servicos.html">Serviços</a>
+        <a href="pages/processo.html">Processo</a>
+        <a href="pages/sobre.html">Sobre</a>
+        <a href="pages/contato.html">Contato</a>
+      </div>
+      <div class="drawer-sep">
+        <span>47S / 2026</span>
+        <a href="mailto:contato@47s.studio">contato@47s.studio</a>
+      </div>
     </div>
-    <div class="drawer-sep">
-     <span>47S / 2026</span>
-     <a href="mailto:contato@47s.studio">contato@47s.studio</a>
-    </div>
-   </div>
   </header>
   <main id="main">
    <section class="hero">
@@ -94,7 +89,7 @@
       <div class="micro">
        47S / 001 — 2026 / DIGITAL SYSTEM
       </div>
-      <h1 class="display hero-title mt-30">
+      <h1 class="display hero-title" style="margin-top:30px">
        <span>
         SITES.
        </span>
@@ -129,46 +124,50 @@
    </section>
    <section class="section">
     <div class="container manifesto-grid reveal">
-     <div class="manifesto-head">
-      <div class="eyebrow">
-       02 / MANIFESTO
-      </div>
-      <div class="manifesto-words">
-       UM SITE
-       <br/>
-       NÃO COMEÇA
-       <br/>
-       NO CÓDIGO.
-      </div>
-     </div>
-     <div class="manifesto-copy body">
-      <p>
-       Antes da interface existe uma ideia.
-       <br/>
-       Antes do código existe uma estrutura.
-       <br/>
-       Antes da tecnologia existem decisões.
-      </p>
-      <p class="muted">
-       A 47S trabalha nessa camada invisível: direção, linguagem, estrutura e experiência.
-      </p>
-     </div>
+
+    <div class="manifesto-head">
+        <div class="eyebrow">02 / MANIFESTO</div>
+
+        <div class="manifesto-words">
+            UM SITE
+            <br>
+            NÃO COMEÇA
+            <br>
+            NO CÓDIGO.
+        </div>
     </div>
+
+    <div class="manifesto-copy body">
+        <p>
+            Antes da interface existe uma ideia.
+            <br>
+            Antes do código existe uma estrutura.
+            <br>
+            Antes da tecnologia existem decisões.
+        </p>
+
+        <p class="muted">
+            A 47S trabalha nessa camada invisível: direção, linguagem,
+            estrutura e experiência.
+        </p>
+    </div>
+
+</div>
    </section>
    <section class="section">
     <div class="container">
      <div class="grid">
-      <div class="col-span-4">
+      <div style="grid-column:span 4">
        <div class="eyebrow">
         03 / SERVIÇOS
        </div>
-       <h2 class="section-title mt-25">
+       <h2 class="section-title" style="margin-top:25px">
         O QUE
         <br/>
         FAZEMOS.
        </h2>
       </div>
-      <div class="col-side">
+      <div style="grid-column:7/-1">
        <p class="lead">
         Design e tecnologia organizados em sistemas digitais claros, expressivos e funcionais.
        </p>
@@ -265,17 +264,17 @@
    <section class="section">
     <div class="container">
      <div class="grid">
-      <div class="col-span-5">
+      <div style="grid-column:span 5">
        <div class="eyebrow">
         04 / PROJETOS
        </div>
-       <h2 class="section-title mt-25">
+       <h2 class="section-title" style="margin-top:25px">
         CONCEPT
         <br/>
         WORK.
        </h2>
       </div>
-      <div class="col-side">
+      <div style="grid-column:7/-1">
        <p class="lead">
         Projetos conceituais criados para explorar diferentes problemas, linguagens e estruturas digitais.
        </p>
@@ -339,7 +338,7 @@
        </span>
       </a>
      </div>
-     <div class="mt-30">
+     <div style="margin-top:30px">
       <a class="link" href="pages/projetos.html">
        ver catálogo completo
       </a>
@@ -349,17 +348,17 @@
    <section class="section">
     <div class="container">
      <div class="grid">
-      <div class="col-span-5">
+      <div style="grid-column:span 5">
        <div class="eyebrow">
         05 / MODELOS
        </div>
-       <h2 class="section-title mt-25">
+       <h2 class="section-title" style="margin-top:25px">
         PONTO
         <br/>
         DE PARTIDA.
        </h2>
       </div>
-      <div class="col-side">
+      <div style="grid-column:7/-1">
        <p class="lead">
         Uma biblioteca de estruturas possíveis para diferentes contextos digitais.
        </p>
@@ -512,12 +511,9 @@
       <div class="micro">
        SITES / DESIGN / BRANDING
       </div>
-      <div class="footer-links mt-20">
+      <div class="footer-links" style="margin-top:20px">
        <a href="pages/projetos.html">
         Projetos
-       </a>
-       <a href="pages/modelos.html">
-        Modelos
        </a>
        <a href="pages/servicos.html">
         Serviços
@@ -537,7 +533,7 @@
       <div class="micro">
        Contato
       </div>
-      <div class="footer-links mt-20">
+      <div class="footer-links" style="margin-top:20px">
        <a href="https://instagram.com/" rel="noreferrer" target="_blank">
         Instagram
        </a>

@@ -9,8 +9,10 @@
     gap:40px;
 }
 .footer-brand {
-    font-size:10rem;
-    line-height:.8;
+    font-size:clamp(5rem,14vw,14rem);
+    font-weight:900;
+    line-height:.75;
+    letter-spacing:-.1em;
 }
 .footer-links {
     display:grid;
