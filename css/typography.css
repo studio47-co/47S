@@ -10,6 +10,9 @@
     font-size:11px;
     letter-spacing:.08em;
     text-transform:uppercase;
+    width: fit-content;
+    height: fit-content;
+    display: block;
 }
 .lead {
     font-size:clamp(1.25rem,2.2vw,2rem);
