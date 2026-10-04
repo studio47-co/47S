@@ -1,0 +1,19 @@
+.about-lead {
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+}
+.principles {
+    margin-top:100px;
+}
+.principle {
+    display:grid;
+    grid-template-columns:80px 1fr;
+    gap:20px;
+    padding:25px 0;
+    border-top:1px solid var(--line);
+}
+.principle h3 {
+    font-size:clamp(2rem,4vw,4rem);
+    letter-spacing:-.06em;
+}
